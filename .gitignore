@@ -1,0 +1,54 @@
+# =====================================================================
+# IMPORTANTE: a pasta .claude/ DEVE ser versionada e enviada ao GitHub
+# (agents, skills, rules, hooks e settings.json são parte do projeto).
+# Apenas o arquivo de configuração pessoal local é ignorado.
+# =====================================================================
+!.claude/
+.claude/settings.local.json
+
+# Variáveis de ambiente / segredos (nunca versionar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Dependências
+node_modules/
+
+# Build / Next.js
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Supabase (arquivos locais da CLI)
+supabase/.temp/
+supabase/.branches/
+
+# Testes / cobertura
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
