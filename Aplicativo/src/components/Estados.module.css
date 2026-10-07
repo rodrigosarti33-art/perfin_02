@@ -1,0 +1,69 @@
+.estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 40vh;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.indicador {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--verde-pastel);
+  border-top-color: var(--verde-logo);
+  border-radius: 50%;
+  animation: girar 0.9s linear infinite;
+}
+
+.titulo {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--azul-logo);
+}
+
+.mensagem {
+  margin: 0;
+  max-width: 48ch;
+  color: var(--texto-apoio);
+}
+
+.botao {
+  min-height: 44px;
+  padding: 0 24px;
+  border: none;
+  border-radius: var(--raio);
+  background: var(--verde-logo);
+  font-family: var(--fonte-corpo);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--fundo);
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: var(--verde-escuro);
+}
+
+.botao:focus-visible {
+  outline: 2px solid var(--azul-logo);
+  outline-offset: 2px;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .indicador {
+    animation: none;
+  }
+}

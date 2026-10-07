@@ -1,0 +1,146 @@
+:root {
+  --verde-logo: #4cac87;
+  --azul-logo: #004c88;
+  --verde-escuro: #33665e;
+  --verde-medio: #538671;
+  --verde-claro: #78b79d;
+  --verde-pastel: #a5d9c9;
+  --cinza-escuro: #58595b;
+  --cinza-claro: #a7a9ac;
+  --azul-marinho: #002440;
+  --azul-acinzentado: #465f6d;
+  --azul-muito-claro: #d5e6ef;
+  --ambar: #fbb040;
+
+  --fundo: #ffffff;
+  --fundo-suave: #f4f7f8;
+  --texto: #2b2c2e;
+  --texto-apoio: var(--cinza-escuro);
+  --borda: #dde2e5;
+  --erro: #b3261e;
+  --erro-fundo: #fdecea;
+  --aviso-fundo: #fff4e0;
+  --degrade-marca: linear-gradient(
+    135deg,
+    var(--azul-marinho) 0%,
+    var(--azul-logo) 55%,
+    var(--verde-escuro) 100%
+  );
+  --raio: 8px;
+  --sombra: 0 1px 2px rgba(0, 36, 64, 0.06), 0 8px 24px rgba(0, 36, 64, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-corpo), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.75em;
+  font-family: var(--fonte-titulo), system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--azul-logo);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  color: var(--verde-escuro);
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--verde-escuro);
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1em;
+}
+
+ul,
+ol {
+  padding-left: 1.25em;
+}
+
+li + li {
+  margin-top: 0.35em;
+}
+
+a {
+  color: var(--azul-logo);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--verde-escuro);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.numero {
+  font-family: var(--fonte-numero), Georgia, serif;
+  font-variant-numeric: tabular-nums;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--azul-logo);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

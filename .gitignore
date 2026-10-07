@@ -14,6 +14,8 @@
 *.key
 *.pfx
 *.p12
+# Anotações locais com segredos (nunca versionar)
+dados_perfin.txt
 
 # Dependências
 node_modules/
@@ -25,6 +27,9 @@ build/
 dist/
 *.tsbuildinfo
 next-env.d.ts
+
+# Vercel (vínculo local da CLI)
+.vercel/
 
 # Supabase (arquivos locais da CLI)
 supabase/.temp/

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004c88">
+  <title>Sem conexão | Portal Perfin</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      color: #58595b;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    header {
+      padding: 20px 24px;
+      background: linear-gradient(135deg, #002440 0%, #004c88 55%, #33665e 100%);
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .cartao {
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      border-top: 4px solid #4cac87;
+      padding: 32px 24px;
+      background: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 36, 64, 0.12);
+    }
+    h1 {
+      margin: 0 0 12px;
+      color: #004c88;
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    p { margin: 0 0 24px; line-height: 1.5; }
+    .botao {
+      display: inline-block;
+      text-decoration: none;
+      appearance: none;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 24px;
+      background: #004c88;
+      color: #ffffff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .botao:hover { background: #002440; }
+    .botao:focus-visible { outline: 3px solid #fbb040; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <header>Portal Perfin</header>
+  <main>
+    <div class="cartao">
+      <h1>Você está sem conexão</h1>
+      <p>Não foi possível alcançar o Portal Perfin. Verifique sua internet e tente de novo.</p>
+      <a class="botao" href="">Tentar de novo</a>
+    </div>
+  </main>
+</body>
+</html>
