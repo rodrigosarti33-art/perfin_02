@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { Lato, Montserrat, Roboto_Slab } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { RegistrarServiceWorker } from '@/components/RegistrarServiceWorker';
 import './globals.css';
 
@@ -44,6 +45,7 @@ export default function LayoutRaiz({ children }: PropsLayoutRaiz): ReactNode {
       <body>
         {children}
         <RegistrarServiceWorker />
+        <Analytics />
       </body>
     </html>
   );
